@@ -1,0 +1,64 @@
+.section-project {
+    .container {
+        .heading-project {
+            text-align: center;
+
+            hr {
+                border-top: 4px solid #8819F8;
+                margin: 0  auto 20px auto;
+                width: 200px;
+            }
+
+            @include media-breakpoint-down(md){
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        .component-projects {
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            @include media-breakpoint-down(md)
+            {
+                justify-content: center;
+            }
+
+            .card-project {
+                width: 30%;
+                margin-bottom: 40px;
+                padding: 40px;
+
+                @include media-breakpoint-down(md)
+                {
+                    width: 90%;
+                }
+
+                .project-thumbnail {
+                    background-color: #B7D3FF;
+                    width: 100%;
+
+                    .project-img {
+                        width: 100%;
+                    }
+                }
+
+                .title-text {
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #000000;
+                }
+
+                .subtitle-text {
+                    font-weight: normal;
+                    font-size: 14px;
+                    margin: 0;
+                    color: #8D8D8D;
+                }
+            }
+        }
+    }
+}

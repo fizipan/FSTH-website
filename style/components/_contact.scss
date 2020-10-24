@@ -1,0 +1,82 @@
+.section-contact {
+    @include media-breakpoint-down(md)
+    {
+        height: 500px;
+        background: linear-gradient(270deg, #1E6FFF 0%, #3968FF 35.3%, #3569FF 56%, rgba(66, 140, 254, 0) 75.52%), #955FFE;
+    }
+
+    .container {
+
+        .contact-us {
+            width: 85%;
+            height: 600px;
+            margin: auto;
+            position: relative;
+
+            @include media-breakpoint-down(md)
+            {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+
+                @include media-breakpoint-down(md)
+                {
+                    display: none;
+                }
+            }
+
+            .description {
+                color: #FFFFFF;
+                text-align: center;
+                padding: 200px;
+                position: absolute;
+                top: -70px;
+
+                @include media-breakpoint-down(md)
+                {
+                    padding: 40px;
+                    position: static;
+                }
+
+
+                .title-text {
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+
+                .subtitle-text {
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 27px;
+                }
+
+                .jam-kerja {
+                    margin-top: 30px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 45px;
+                }
+
+                .btn-contact {
+                    margin-top: 20px;
+                    color: white;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 10px 50px;
+                    background: #E7AC2D;
+                    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 22.5px;
+
+                    &:hover {
+                        background-color: #e7ba59;
+                    }
+
+                }
+            }
+        }
+    }
+}

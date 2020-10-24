@@ -1,0 +1,86 @@
+body {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.page-content {
+    padding-top: 150px;
+}
+
+footer {
+    margin-top: 150px;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    min-height: 500px;
+    background: url(/images/img-footer.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        margin-top: 80px;
+
+        @include media-breakpoint-down(md){
+            margin-top: 150px;
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 54px;
+            color: #FFFFFF;
+
+        }
+
+        .content-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .link {
+                ul {
+                    padding: 0;
+                    margin: 40px 0;
+
+                    li {
+                        width: 150px;
+                        margin: 0;
+                        list-style: none;
+                        border-bottom: 1px dotted #dddd;
+                        margin-bottom: 40px;
+
+                        a {
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: #ddd;
+                        }
+                    }
+                }
+            }
+
+            .sosmed {
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    margin-bottom: 40px;
+                    max-height: 40px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 80px;
+
+        p {
+            padding-top: 20px;
+            text-align: center;
+            border-top: 1px solid #BCBCBC;
+            font-weight: 300;
+            font-size: 16px;
+            color: #BCBCBC;
+        }
+    }
+}

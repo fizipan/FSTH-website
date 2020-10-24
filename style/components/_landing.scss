@@ -1,0 +1,58 @@
+.section-landing {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .landing-text {
+            margin-top: 20px;
+            width: 50%;
+
+            @include media-breakpoint-down(md){
+                width: 100%;
+
+                h5 {
+                    font-size: 34px;
+                }
+            }
+
+            .subtitle-text {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                line-height: 28px;
+                color: #716565;
+            }
+
+            .btn-hire {
+                text-decoration: none;
+                font-weight: 500;
+                display: inline-block;
+                color: white;
+                padding: 10px 60px;
+                background: linear-gradient(268.36deg, #4689FF 0.28%, #5C5FFC 38.11%, #A564E7 97.66%), #8819F8;
+                border-radius: 27px;
+                
+                &:hover {
+                    background: rgba(137, 27, 247, 0.50);
+                }
+            }
+        }
+
+        .landing-image {
+
+            @include media-breakpoint-only(md){
+                width: 50%;
+            }
+            
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+
+            width: 40%;
+
+            .landing-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
