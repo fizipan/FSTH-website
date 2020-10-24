@@ -10830,6 +10830,12 @@ body {
   padding-top: 150px;
 }
 
+@media (max-width: 991.98px) {
+  .page-content {
+    padding-top: 120px;
+  }
+}
+
 footer {
   margin-top: 150px;
   overflow: hidden;
@@ -10968,6 +10974,7 @@ footer .copyright p {
     right: 0;
     height: 100vh;
     width: 100%;
+    padding-left: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -11196,10 +11203,10 @@ footer .copyright p {
 
 @media (max-width: 991.98px) {
   .section-team .container .team-text {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     margin: auto;
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
   .section-team .container .team-text hr {
     display: inline-block;
@@ -11274,7 +11281,7 @@ footer .copyright p {
   .section-team .container .team-profile .card {
     margin-right: 10px;
     margin-bottom: 50px;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -11357,7 +11364,7 @@ footer .copyright p {
 @media (max-width: 991.98px) {
   .section-service .container .component-service .card {
     margin-right: 0;
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -11466,7 +11473,7 @@ footer .copyright p {
 
 @media (max-width: 991.98px) {
   .section-project .container .component-projects .card-project {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -11495,7 +11502,7 @@ footer .copyright p {
 
 @media (max-width: 991.98px) {
   .section-contact {
-    height: 500px;
+    min-height: 700px;
     background: -webkit-gradient(linear, right top, left top, from(#1E6FFF), color-stop(35.3%, #3968FF), color-stop(56%, #3569FF), color-stop(75.52%, rgba(66, 140, 254, 0))), #955FFE;
     background: linear-gradient(270deg, #1E6FFF 0%, #3968FF 35.3%, #3569FF 56%, rgba(66, 140, 254, 0) 75.52%), #955FFE;
   }

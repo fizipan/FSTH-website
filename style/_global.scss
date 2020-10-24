@@ -6,6 +6,11 @@ body {
 
 .page-content {
     padding-top: 150px;
+
+    @include media-breakpoint-down(md)
+    {
+        padding-top: 120px;
+    }
 }
 
 footer {

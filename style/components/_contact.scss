@@ -1,7 +1,7 @@
 .section-contact {
     @include media-breakpoint-down(md)
     {
-        height: 500px;
+        min-height: 700px;
         background: linear-gradient(270deg, #1E6FFF 0%, #3968FF 35.3%, #3569FF 56%, rgba(66, 140, 254, 0) 75.52%), #955FFE;
     }
 
@@ -46,6 +46,7 @@
                     font-weight: 600;
                     font-size: 30px;
                     line-height: 45px;
+
                 }
 
                 .subtitle-text {
